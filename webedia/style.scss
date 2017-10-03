@@ -1,0 +1,576 @@
+/*
+Theme Name: Webedia
+Theme URI: http://webedia.com
+Author: Lucas Martins
+Author URI: http://webedia.com
+Description: Tema criado para desafio do webedia
+Version: 1.0
+*/
+
+/* GERAL */
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #f0f0f0;
+}
+
+.gallery img {
+    border: 2px solid #cfcfcf;
+    width: 95%;
+}
+
+/* HEADER */
+
+img.logo-img {
+    position: relative;
+    vertical-align: middle;
+    top: -2px;
+}
+.logo {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+	font-size: 14px;
+}
+.header-menu {
+    width: 100%;
+    background: #FFFFFF;
+    position: fixed;
+    height: auto;
+	box-shadow: 0px 5px 5px rgba(0,0,0,0.1);
+	
+	ul {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		text-align: center;
+		
+		li {
+			display: inline-block;
+			margin-left: 0.8%;
+			
+			a {
+				color: #858585;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+				font-size: 0.6em;
+				line-height: 12px;
+			}
+		}
+	}
+}
+
+.scrolled{
+	top: 0px;
+}
+
+.topo {
+    position: fixed;
+    width: 100%;
+    background: #f0f0f0;
+    top: 0;
+	z-index: 200;
+}
+
+.header {
+    float: left;
+    width: 100%;
+}
+
+.container {
+    width: 68%;
+    margin: 120px auto;
+}
+
+/* MENU MOBILE */
+
+#menu-sidebar{
+	padding: 20px;
+	width: 50%;
+	min-height: 2000px;
+	position: fixed;
+	box-shadow: 0px 0 40px rgba(0,0,0,0.1);
+	background: #fff;
+	display: none;
+	
+	ul {
+		list-style-type: none;
+		padding-left: 0;
+		
+		li {
+			border: 1px solid #a5a5a5;
+			text-align: center;
+			line-height: 21px;
+			font-size: 14px;
+			margin-bottom: 10px;
+			
+			a {
+				font-size: 1.2em;
+				color: #a5a5a5;
+				line-height: 2em;
+				text-align: center;
+			}
+		}
+	}
+}
+
+/* CONTEUDO */
+
+section.conteudo {
+    margin-top: 120px;
+    background-color: white;
+    width: 48%;
+    position: relative;
+    margin: 0 auto;
+    height: auto;
+    z-index: 100;
+    float: left;
+    margin-left: 1%;
+    text-align: center;
+    margin-right: 1%;
+    margin-bottom: 20px;
+	
+	.first {
+		background-color: white;
+		width: 98%;
+		position: relative;
+		height: auto;
+		z-index: 100;
+		float: none;
+		margin-bottom: 20px;
+	}
+}
+
+#main {
+    padding: 7px 0;
+    background: #f0f0f0;
+    overflow: hidden;
+    z-index: 100;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main#main.active {
+    transform: translateX(65%);
+    position: fixed;
+}
+
+main#main.active .button {
+	background: url(img/menu-icone-fechado.png) no-repeat;
+	width: 55px;
+    height: 40px;
+    background-size: 45px;
+    float: left;
+    background-position: 10px -3px;
+    cursor: pointer;
+}
+	
+#main .button {
+	display: none;
+    background: url(img/menu-icone.png) no-repeat;
+    width: 55px;
+    height: 40px;
+    background-size: 45px;
+    float: left;
+    background-position: 10px -3px;
+	cursor: pointer;
+}
+
+
+/* PRIMEIRO SLIDE */
+
+.first{
+
+	h1.titulo-nota {
+		text-align: left;
+		padding: 20px 22px 4px 22px;
+		font-size: 1.4em;
+		line-height: 1.4em;
+		text-transform: uppercase;
+		color: #f57942;
+	}
+	
+	.sub-titulo p {
+		text-align: left;
+		font-size: 1em;
+		line-height: 1.4em;
+		padding: 0px 22px 4px 22px;
+		display: block;
+		color: black;
+	}
+	
+	.imagem-nota {
+		width: 94%;
+		height: auto;
+		margin: 15px auto;
+		
+		img {
+			width: 100%;
+			margin: 0 auto;
+			position: relative;
+		}
+	}
+	
+	.separador {
+		border-bottom: 1px solid #f57942;
+		width: 20%;
+		margin: 40px auto;
+		margin-bottom: 17px;
+	}
+	
+	p.textoDestaque {
+		text-align: center;
+		font-size: 1.2em;
+		line-height: 1.2em;
+		color: #f57942;
+	}
+	
+	.textoConteudo p {
+		margin: 10px auto;
+		width: 88%;
+		text-align: center;
+		padding-bottom: 20px;
+		color: #a5a5a5;
+	}
+}
+
+section.conteudo.first {
+    background-color: white;
+    width: 98%;
+    position: relative;
+    height: auto;
+    z-index: 100;
+    float: none;
+    margin-bottom: 20px;
+}
+
+/* DEMAIS SLIDES */
+
+.imagem-nota {
+    width: 90%;
+    height: auto;
+    margin: 15px auto;
+
+	img {
+		width: 100%;
+		margin: 0 auto;
+		position: relative;
+	}
+}
+
+.separador {
+    border-bottom: 1px solid #f57942;
+    width: 20%;
+    margin: 40px auto;
+    margin-bottom: 17px;
+}
+
+.sub-titulo p{
+	display: block;
+    text-align: left;
+    font-size: .8em;
+    line-height: 1.4em;
+    padding: 0px 22px 4px 22px;
+	color: black;
+}
+
+.textoConteudo p {
+    margin: 10px auto;
+    width: 88%;
+    text-align: center;
+    padding-bottom: 20px;
+    color: #a5a5a5;
+}
+
+.textoDestaque {
+    color: #f57942;
+    font-size: 1.1em;
+    line-height: 1.1em;
+    text-align: center;
+}
+
+h1.titulo-categoria {
+    text-align: center;
+    padding: 3px 22px 33px 22px;
+    font-size: 1.4em;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    color: #a5a5a5;
+}
+
+
+/* POST */
+
+article.conteudo-post {
+    background-color: white;
+    width: 100%;
+    position: relative;
+    margin: 50px auto;
+    height: auto;
+    z-index: 100;
+    float: left;
+    margin-left: 1%;
+    text-align: center;
+    margin-right: 1%;
+	padding-bottom: 40px;
+}
+
+.titulo-post {
+	text-align: left;
+	padding: 20px 22px 4px 22px;
+	font-size: 1.4em;
+	line-height: 1.4em;
+	text-transform: uppercase;
+	color: #f57942;
+}
+	
+.titulo-nota {
+	text-align: left;
+	padding: 20px 22px 4px 22px;
+	font-size: 1.4em;
+	line-height: 1.4em;
+	text-transform: uppercase;
+	color: #f57942;
+}
+
+
+p{
+
+	.conteudo-post {
+		margin: 10px auto;
+		width: 88%;
+		text-align: left;
+		padding-bottom: 20px;
+		margin-top: 40px;
+	}
+	
+	.textoDestaque {
+		text-align: center;
+		font-size: 1.2em;
+		line-height: 1.2em;
+		color: #f57942;
+		width: 98%;
+	}
+}
+
+/* NAVEGACAO */
+
+div#navegacao {
+    clear: both;
+}
+
+.anteriores {
+    float: right;
+	
+	a {
+		color: #8a8989;
+	}
+}
+
+.recentes {
+    float: left;
+	
+	a {
+		color: #8a8989;
+	}
+}
+
+/* BREADCRUMB */
+
+#trilha {
+    list-style:none;
+    margin:10px 0;
+    overflow:hidden;
+
+	li {
+		float: left;
+		margin-right: 15px;
+
+		a {
+			color: blue;
+		}
+	}
+	
+	.separado {
+		font-weight: 700;
+		font-size: 20px;
+		color: #999;
+	}
+}
+
+/* FOOTER */
+
+.redes-sociais {
+    background: #fff;
+    text-align: center;
+	box-shadow: 0 -4px 5px rgba(0,0,0,0.1);
+	img {
+		width: 35px;
+		border: 1px solid white;
+		background-color: #c1c1c1;
+		border-radius: 50px;
+		padding: 5px 5px;
+	}
+	ul {
+		padding: 10px;
+		li {
+			display: inline-block;
+			margin-left: 2%;
+		}
+	}
+}
+
+.facebook {
+	&:hover {
+		background-color: #6081c4;
+	}
+}
+
+.youtube {
+	&:hover {
+		background-color: #f25a4c;
+	}
+}
+
+.pinterest {
+	&:hover {
+		background-color: #e62b34;
+	}
+}
+
+.twitter {
+	&:hover {
+		background-color: #43bdf0;
+	}
+}
+		
+.instagram {
+	&:hover {
+		background-color: #0088bf;
+	}
+}
+
+.copyright {
+    margin: 10px auto;
+	font-size: 14px;
+    text-align: center;
+}
+
+footer {
+    clear: both;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 380px) and (max-width: 425px) {	
+	p.conteudo-post {
+		margin: 10px auto;
+		width: 88%;
+		text-align: left;
+		padding-bottom: 0px;
+		margin-top: 0px;
+	}
+}
+
+@media only screen and (min-width: 319px) and (max-width: 375px) {
+	
+	article.conteudo-post {
+		margin: 10px auto;
+	}
+	
+	h1.titulo-post {
+		font-size: 1.2em;
+		line-height: 1.2em;
+	}
+	
+	p.conteudo-post {
+		padding-bottom: 0px;
+		margin-top: 0px;
+	}
+	
+	h1.titulo-categoria {
+		font-size: 1.2em;
+		line-height: 1.2em;
+	}	
+	
+	.first h1.titulo-nota {
+		font-size: 1.2em;
+		line-height: 1.2em;
+	}
+	
+	section.conteudo.first {
+		margin: 10px auto;
+	}	
+	
+}
+
+@media only screen and (max-width: 770px) {
+
+	.header {
+		float: left;
+		width: 80%;
+	}
+	
+	.header-menu {
+        display: none;
+    }
+	
+	.logo {
+		text-align: right;
+		margin-right: 4%;
+	}
+	
+	img.logo-img {
+		top: -1px;
+		width: 85px;
+	}
+	
+	#menu-sidebar{
+		display: block;
+	}	
+	
+	.container {
+		width: 90%;
+		margin: 50px auto;
+		min-height: 700px;
+	}
+	
+	.textoConteudo {
+		display: none;
+	}
+	
+	.textoDestaque {
+		margin-bottom: 15px;
+	}
+	
+	.imagem-nota img {
+		width: 100%;
+		height: auto;
+	}
+	
+	.first .imagem-nota img {
+		width: 100%;
+		height: auto;
+	}
+	
+	div#navegacao {
+		margin-bottom: 40px;
+	}
+	
+	section.first {
+		margin: 0px auto;
+		margin-bottom: 20px;
+	}
+
+	section.conteudo{
+		width: 98%;
+	}
+	
+	#main .button{
+		display: block;
+	}
+}
