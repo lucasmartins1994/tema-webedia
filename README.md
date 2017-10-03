@@ -1,3 +1,4 @@
+#desafioo
 ==================================
 	ATIVAÇÃO DO TEMA WEBEDIA
 ==================================
@@ -51,3 +52,12 @@
 	* HTML e XML
 		* marcar " Set Last-Modified header " e "Set expires header"
 		* Expires header lifetime: 900 seconds
+		
+==============
+FEED XML
+==============
+
+inserir após a url > /feed/feedname
+
+
+
